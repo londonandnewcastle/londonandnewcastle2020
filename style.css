@@ -308,6 +308,36 @@ strong,
   margin-left: 4rem;
 }
 
+.m8 {
+  margin: 8rem;
+}
+
+.mt8 {
+  margin-top: 8rem;
+}
+
+.mr8 {
+  margin-right: 8rem;
+}
+
+.mb8 {
+  margin-bottom: 8rem;
+}
+
+.ml8 {
+  margin-left: 8rem;
+}
+
+.mx8 {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.my8 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
 .wrap {
   margin-right: auto;
   margin-left: auto;
@@ -449,7 +479,7 @@ strong,
 
 @media screen and (min-width: 48em) and (max-width: 64em) {
   .p-responsive {
-    padding: 3rem;
+    padding: 2rem;
   }
 
   .px-responsive {
@@ -465,7 +495,7 @@ strong,
 
 @media screen and (min-width: 64em) {
   .p-responsive {
-    padding: 4rem;
+    padding: 2rem;
   }
 
   .px-responsive {
@@ -727,6 +757,10 @@ strong,
   background-color: #fff;
 }
 
+.bg-opacity {
+  background-color:rgba(0, 0, 0, 0.8);
+}
+
 .bg-blue {
   background-color: #0096cc;
 }
@@ -756,8 +790,7 @@ strong,
 }
 
 body {
-  color: #333333;
-  background-color: #fff;
+  color: #eee;
 }
 
 a {
@@ -901,13 +934,12 @@ body {
 }
 
 .site-header a {
-  color: #333;
   font-weight: 300;
 }
 
 .site-header nav a {
   font-size: 1rem;
-  color: #666;
+  color: #eee;
 }
 
 .site-header nav a:hover {
@@ -993,7 +1025,6 @@ body {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background: #fafafa;
   border-radius: 0.1875em;
   border: 1px solid #f3f3f3;
   color: #333333;
@@ -1036,8 +1067,6 @@ p.post-meta {
   font-weight: 300;
   margin: 3em 0;
   padding: 3em 0;
-  border-top: 1px solid #fafafa;
-  border-bottom: 1px solid #fafafa;
   color: #7a7a7a;
   font-style: italic;
 }
@@ -1073,7 +1102,6 @@ textarea.input {
 p {
   font-weight: 300;
   line-height: 1.5;
-  color: #333;
 }
 
 abbr {
@@ -1111,7 +1139,6 @@ blockquote {
 blockquote footer {
   font-size: .85rem;
   font-style: normal;
-  background-color: #fff;
   color: #7a7a7a;
   border-color: transparent;
 }
@@ -1128,8 +1155,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Quattrocento", 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 900;
+  font-family: "Archivo Black", "PT Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
   line-height: 1.2;
   margin: 0.414em 0 0.5em;
 }
@@ -1190,6 +1217,10 @@ h6,
   li {
     font-size: 1.5rem;
     line-height: 1.8;
+  }
+
+  #site-navigation li {
+    line-height: normal;
   }
 
   .small {
@@ -1303,14 +1334,8 @@ h6,
   }
 }
 
-footer {
-  border-top: thin solid #f3f3f3;
-}
-
 footer,
 footer .wrap {
-  color: #7a7a7a;
-  background-color: #fafafa;
   font-size: 1.5rem;
   font-weight: 300;
   clear: both;
@@ -1332,7 +1357,6 @@ Licensed under the MIT license - http://opensource.org/license/MIT
   display: inline-block;
   width: 24px;
   height: 24px;
-  margin: 10px;
   vertical-align: middle;
   -o-transition: all .3s;
   -moz-transition: all .3s;
@@ -1340,12 +1364,12 @@ Licensed under the MIT license - http://opensource.org/license/MIT
   -ms-transition: all .3s;
 }
 
-.icons a.rss {
-  background: url(/images/icons/rss.png) left top no-repeat;
+.icons a.twitter {
+  background: url(https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_gray-512.png) left top no-repeat;
 }
 
-.icons a.twitter {
-  background: url(/images/icons/twitter.png) left top no-repeat;
+.icons a.rss {
+  background: url(https://cdn3.iconfinder.com/data/icons/free-social-icons/67/rss_circle_gray-512.png) left top no-repeat;
 }
 
 /*!
@@ -1436,7 +1460,6 @@ Copyright (c) 2014 Daniel Eden
 .paginatin_area ul li a {
   background: none repeat scroll 0 0 #262626;
   border-radius: 4px;
-  color: #fff;
   display: block;
   font-family: lato;
   font-size: 14px;
@@ -1530,4 +1553,8 @@ Copyright (c) 2014 Daniel Eden
 #site-navigation li {
 	display: inline;
 	margin: auto 0.5em;
+}
+
+#site-navigation li:last-of-type {
+  margin-right: 0;
 }
