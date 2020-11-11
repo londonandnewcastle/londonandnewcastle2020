@@ -21,7 +21,7 @@
 				<a class="fa fa-twitter twitter" href="https://twitter.com/andnewcastle"></a>
 			</nav>
 
-          	Copyright &#169; London & Newcastle 2020<br>
+          	Copyright &#169; 2020 - London & Newcastle<br>
         </div>
       </div>
     </footer>
