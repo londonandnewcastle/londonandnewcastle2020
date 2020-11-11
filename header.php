@@ -16,9 +16,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Crimson+Text|Quattrocento|Work+Sans&display=swap" rel="stylesheet">
 
 	<?php wp_head(); ?>
-	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Quattrocento|Work+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -26,7 +26,7 @@
 <div id="page" class="site-wrap site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'londonandnewcastle2020' ); ?></a>
 
-	<header class="site-header px2 p-responsive">
+	<header class="site-header px4 py2 mb8 bg-opacity">
 	<div class="mt2 wrap">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-title"><?php bloginfo( 'name' ); ?></a>
 		<nav id="site-navigation" class="main-navigation site-nav right">

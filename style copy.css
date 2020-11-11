@@ -471,9 +471,6 @@ big {
 
 /* Elements
 --------------------------------------------- */
-body {
-	background: #fff;
-}
 
 hr {
 	background-color: #ccc;
@@ -781,6 +778,7 @@ textarea {
 --------------------------------------------- */
 .widget {
 	margin: 0 0 1.5em;
+	text-align: center;
 }
 
 .widget select {

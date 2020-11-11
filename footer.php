@@ -13,8 +13,8 @@
 </div>
 </div>
 </div>
-	<footer class="footer mt4">
-      <div class="p2 p-responsive wrap">
+	<footer class="footer">
+      <div class="p4 wrap bg-opacity">
         <div class="measure mt1 center">
 			<nav class="social-icons icons">
 				<a class="fa fa-rss rss" href="/index.xml"></a>
@@ -29,6 +29,7 @@
 
 <!-- Highlight -->
 <script src="/js/highlight.pack.js"></script>
+<script src="https://kit.fontawesome.com/37769faf4a.js" crossorigin="anonymous"></script>
 <script>
 	hljs.initHighlightingOnLoad();
 </script>
