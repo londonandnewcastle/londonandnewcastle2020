@@ -9,39 +9,16 @@
 
 ?>
 
-<div id="post-<?php the_ID(); ?>" class="post p2 p-responsive wrap" role="main">
-    <div class="post-header mb2">
-      <h3 class="h2 post-title">
+<article id="post-<?php the_ID(); ?>" class="p2 mb8 mx8 bg-opacity" <?php post_class(); ?>>
+	<header class="entry-header">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
+
+	<?php londonandnewcastle2020_post_thumbnail(); ?>
+
+	<div class="entry-content">
 		<?php
-			if ( is_singular() ) :
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			else :
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			endif;
-		?>
-	  </h3>
-	</div>
-	
-	<div class="measure">
-      <article class="post-content">
-        <div class="post-image">
-			<?php londonandnewcastle2020_post_thumbnail(); ?>
-        </div>
-        <?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'londonandnewcastle2020' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
+		the_content();
 
 		wp_link_pages(
 			array(
@@ -50,18 +27,28 @@
 			)
 		);
 		?>
-		</article>
-	  
-	  <div class="post-info">
-	  		<?php if ( 'post' === get_post_type() ) : ?>
-				<?php
-				londonandnewcastle2020_posted_on();
-				londonandnewcastle2020_posted_by();
-				?>
-			<?php endif; ?>
+	</div><!-- .entry-content -->
 
-		</div>
-		<?php londonandnewcastle2020_entry_footer(); ?>
-	  </div>
-  </div>
-</div> <!-- #post-<?php the_ID(); ?> -->
+	<?php if ( get_edit_post_link() ) : ?>
+		<footer class="entry-footer">
+			<?php
+			edit_post_link(
+				sprintf(
+					wp_kses(
+						/* translators: %s: Name of current post. Only visible to screen readers */
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'londonandnewcastle2020' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					),
+					wp_kses_post( get_the_title() )
+				),
+				'<span class="edit-link">',
+				'</span>'
+			);
+			?>
+		</footer><!-- .entry-footer -->
+	<?php endif; ?>
+</article><!-- #post-<?php the_ID(); ?> -->
