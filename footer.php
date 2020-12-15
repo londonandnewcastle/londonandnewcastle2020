@@ -24,7 +24,7 @@
 
 			  Copyright &#169; 2020 - London & Newcastle<br><br>
 			  
-			  <small>Background art: <i>"Grime & Punishment"</i> <a href="https://aitaicrew.com">Aitai Crew</a></small>
+			  <small>Background art: Grime & Punishment - <a href="https://aitaicrew.com">Aitai Crew</a></small>
         </div>
       </div>
     </footer>
