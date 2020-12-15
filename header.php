@@ -37,6 +37,13 @@
 					'menu_id'        => 'primary-menu',
 				)
 			);
+			// if ( WC()->cart->get_cart_contents_count() == 0 ) {
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-shop',
+					'menu_id'        => 'shop-primary-menu',
+				)
+			);
 			?>
 		</nav><!-- #site-navigation -->
 		<div class="clearfix"></div>
