@@ -19,9 +19,12 @@
 			<nav class="social-icons icons">
 				<a class="fa fa-rss rss" href="/index.xml"></a>
 				<a class="fa fa-twitter twitter" href="https://twitter.com/andnewcastle"></a>
+				<a class="fa fa-instagram instagram" href="https://instagram.com/londonandnewcastle"></a>
 			</nav>
 
-          	Copyright &#169; 2020 - London & Newcastle<br>
+			  Copyright &#169; 2020 - London & Newcastle<br><br>
+			  
+			  <small>Background art: <i>"Grime & Punishment"</i> <a href="https://aitaicrew.com">Aitai Crew</a></small>
         </div>
       </div>
     </footer>
