@@ -1572,3 +1572,17 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
   line-height: inherit;
   padding: .2em 1em;
 }
+
+table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents {
+  border-color: #fff;
+}
+
+.woocommerce table.shop_table td {
+  border: 1px solid lightgrey;
+}
+
+#add_payment_method .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
+  padding: 5px 0;
+  font-size: 20px;
+  line-height: inherit;
+}
