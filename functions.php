@@ -51,6 +51,7 @@ if ( ! function_exists( 'londonandnewcastle2020_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'londonandnewcastle2020' ),
+				'menu-shop' => esc_html__( 'Shop', 'londonandnewcastle2020' ),
 			)
 		);
 
